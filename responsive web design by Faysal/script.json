@@ -1,0 +1,60 @@
+{
+    "typingScripts": [
+      {
+        "target": ".typing",
+        "options": {
+          "strings": ["Web Designer", "Web Developer", "Youtuber", "Blogger"],
+          "typeSpeed": 80,
+          "backSpeed": 80
+        }
+      },
+      {
+        "target": ".typing-2",
+        "options": {
+          "strings": ["Web Developer", "Web Designer", "Youtuber", "Blogger"],
+          "typeSpeed": 100,
+          "backSpeed": 60
+        }
+      }
+    ],
+    "faqFunction": {
+      "faqs": ".faq",
+      "event": "click",
+      "callback": {
+        "toggleClass": "open",
+        "changeIcon": {
+          "target": ".faq_icon i",
+          "classNames": {
+            "plus": "fa-solid fa-plus",
+            "minus": "fa-solid fa-minus"
+          }
+        }
+      }
+    },
+    "menuFunction": {
+      "menu": {
+        "selector": ".nav_menu",
+        "display": "flex"
+      },
+      "buttons": {
+        "open": "#open-menu-btn",
+        "close": "#close-menu-btn",
+        "display": {
+          "close": "none",
+          "open": "inline-block"
+        }
+      }
+    },
+    "closeNavFunction": {
+      "menu": ".nav_menu",
+      "closeBtn": "#close-menu-btn",
+      "openBtn": "#open-menu-btn"
+    },
+    "navColorChange": {
+      "target": "nav",
+      "event": "scroll",
+      "class": "window-scroll",
+      "condition": "window.scrollY > 100"
+    }
+  }
+  
